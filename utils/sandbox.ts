@@ -10,7 +10,7 @@ export const createSandbox = async (repoUrl: string) => {
       type: "git",
     },
     resources: { vcpus: 2 },
-    timeout: ms("1m"),
+    timeout: ms("5m"),
     ports: [3000],
     runtime: "node22",
   });
